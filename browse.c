@@ -242,7 +242,6 @@ void browse(int type, int nc, int nr, void *in)
   intrflush(pdlscr,FALSE);
   keypad(pdlscr,TRUE);
   /* Menu bar */
-  wmenu  = subwin(pdlscr,1,COLS,0,0);
   wvlab  = subwin(pdlscr,1,mycols,1,HLAB);
   wscroll= subwin(pdlscr,drows,mycols+HLAB,2,0);
   warray = subwin(wscroll,drows,mycols,2,HLAB);
